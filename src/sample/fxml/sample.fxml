@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox id="top-container" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MainController">
+    <VBox HBox.hgrow="ALWAYS">
+        <HBox maxWidth="1.7976931348623157E308" prefHeight="80" styleClass="area">
+            <Label text="Top bar" />
+         <VBox.margin>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </VBox.margin>
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS">
+            <VBox alignment="TOP_CENTER" minWidth="163.0" spacing="7" styleClass="area" HBox.hgrow="NEVER">
+                <Button fx:id="changeHeaderButton" text="Toggle content view" />
+                <Button fx:id="changeStartHeaderTextButton" text="Change start header text" />
+            <HBox.margin>
+               <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+            </HBox.margin>
+            </VBox>
+            <StackPane fx:id="contentPane" styleClass="area" HBox.hgrow="ALWAYS">
+                <fx:include fx:id="startView" source="start.fxml" />
+                <fx:include fx:id="checkoutView" source="checkout.fxml" />
+            <HBox.margin>
+               <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+            </HBox.margin>
+            </StackPane>
+        </HBox>
+    </VBox>
+</HBox>

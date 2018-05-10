@@ -1,0 +1,13 @@
+#top-container {
+    -fx-padding: 14;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+}
+
+.area {
+	-fx-border-color: tomato;
+	-fx-border-style: solid;
+	-fx-border-width: 1;
+	-fx-padding: 7;
+}
